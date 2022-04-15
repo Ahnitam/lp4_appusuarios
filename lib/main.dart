@@ -3,9 +3,11 @@
 import 'package:lp4_appusuarios/api/api.dart';
 import 'package:lp4_appusuarios/api/detalhe_album.dart';
 import 'package:lp4_appusuarios/provider/provider_usuario.dart';
+import 'package:lp4_appusuarios/view/cadastrar_fornecedor.dart';
 // import 'package:lp4_appusuarios/services/auth_service.dart';
 // import 'package:lp4_appusuarios/view/AuthCheck.dart';
 import 'package:lp4_appusuarios/view/detalhe_usuario.dart';
+import 'package:lp4_appusuarios/view/tela_fornecedor.dart';
 import 'package:lp4_appusuarios/view/tela_inicio.dart';
 import 'package:lp4_appusuarios/view/tela_login.dart';
 import 'package:lp4_appusuarios/view/tela_usuario.dart';
@@ -35,6 +37,8 @@ void main() async {
           "/telaapi": (context) => const Api(),
           "/detalhealbum": (context) => const DetalheAlbum(),
           "/detalheusuario": (context) => const TelaDetalheUsuario(),
+          "/telafornecedor": (context) => const TelaFornecedor(),
+          "/cadastrarfornecedor": (context) => const CadastrarFornecedor(),
         },
       ),
     ),

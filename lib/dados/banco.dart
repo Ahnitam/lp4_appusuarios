@@ -41,6 +41,21 @@ class Banco {
     });
   }
 
+  // Future<void> inserirFornecedor(Fornecedor user) async {
+  //   var bd = await this.bd;
+  //   await bd.insert(tabela, {
+  //
+  //   "razaosocial": user.razaosocial;
+  //   "telefone": user.telefone;
+  //   "email": user.email;
+  //   "endereco": user.endereco;
+  //   "cidade": user.cidade;
+  //   "cnpj": user.cnpj;
+  //   "produto": user.produto;
+  //   "descricaoProduto": user.descricaoProduto;
+  //   });
+  // }
+
   Future<List<Usuario>> listarUsuarios() async {
     var bd = await this.bd;
     List lista = await bd.query(tabela);

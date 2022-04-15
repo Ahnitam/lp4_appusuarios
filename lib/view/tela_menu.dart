@@ -98,7 +98,9 @@ class _MenuState extends State<Menu> {
                     title: const Text("Produtos"),
                   ),
                   ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/telafornecedor");
+                    },
                     leading: const Icon(Icons.store, color: Colors.blue,),
                     title: const Text("Fornecedores"),
                   ),
